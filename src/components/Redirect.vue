@@ -19,7 +19,7 @@ export default {
   },
   mounted(){
       this.$store.commit('setToken',this.id)
-      axios.post('http://localhost:3000/auth/get',{token:this.id}).then(res=>{
+      axios.post('https://passport-oauth.herokuapp.com/auth/get',{token:this.id}).then(res=>{
           this.$store.commit('updateUser',res.data)
           this.$router.push({name:'Disp'})
       }).catch(err=>{

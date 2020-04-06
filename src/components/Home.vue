@@ -47,7 +47,7 @@ export default {
   },
   methods:{
     authenticate(provider){
-      window.location = `http://localhost:3000/auth/${provider}`
+      window.location = `https://passport-oauth.herokuapp.com/auth/${provider}`
     }
   }
 }
