@@ -11,11 +11,13 @@
   <div class="fakeButtons fakeZoom"></div>
 </div>
 <div class="fakeScreen">
-  <p class="line1">CLAY:~$ MEVN OAuth2.0<br /><br />Open Authentication lets you signup for services without having to type a word.<br /><br />But, Do you know what info it returns?<span class="cursor1">_</span></p>
+  <p class="line1">CLAY:~$ MEVN OAuth2.0<span class="cursor1">_</span></p>
+  <p class="line2">Open Authentication lets you signup for services without having to type a word.<span class="cursor2">_</span></p>
+  <p class="line3">But, Do you know what info it returns?<span class="cursor3">_</span></p>
 </div>
   </div>
   <div class="third container">
-    <h5>Click one of the below and<span>see for yourself</span></h5>
+    <h5>Click one of the below and<span>find out</span></h5>
     <div class="options">
       <div class="grid-item">
         <img src="../../static/img/google.png" alt="Google" width="70" height="70" @click.prevent="authenticate('google')">
