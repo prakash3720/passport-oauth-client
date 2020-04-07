@@ -66,7 +66,7 @@ export default {
     font-family: 'Montserrat';
 }
 pre{
-    color: rgb(26, 194, 76);
+    color: rgb(43, 163, 79);
     margin: 0;
     overflow-y: hidden;
     overflow-x: scroll;

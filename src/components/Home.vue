@@ -1,5 +1,6 @@
 <template>
 <div class="home">
+  <div class="des"></div>
   <div class="first">
       <h2>Passport <span>OAuth2.0</span></h2>
   </div>
@@ -10,11 +11,11 @@
   <div class="fakeButtons fakeZoom"></div>
 </div>
 <div class="fakeScreen">
-  <p class="line1">$(sudo) Let's see what Open Authentication tells 3rd Party apps about us.<span class="cursor1">_</span></p>
+  <p class="line1">CLAY:~$ MEVN OAuth2.0<br /><br />Open Authentication lets you signup for services without having to type a word.<br /><br />But, Do you know what info it returns?<span class="cursor1">_</span></p>
 </div>
   </div>
   <div class="third container">
-    <h5>Click one of the below and<span>get started</span></h5>
+    <h5>Click one of the below and<span>see for yourself</span></h5>
     <div class="options">
       <div class="grid-item">
         <img src="../../static/img/google.png" alt="Google" width="70" height="70" @click.prevent="authenticate('google')">
@@ -54,6 +55,15 @@ export default {
 </script>
 
 <style scoped>
+.des{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #3d3d3d;
+  opacity: 0.5;
+}
 img{
   cursor: pointer;
 }
@@ -77,6 +87,9 @@ h5 span{
   padding-bottom: 3rem;
 }
 @media only screen and (max-width: 768px){
+  .des{
+    display: none;
+  }
   .fakeMenu, .fakeScreen{
   width: 100%!important;
   margin: 0 auto!important;
@@ -106,6 +119,7 @@ h5 span{
   min-height: 100vh;
   background-color: #272727;
   color: #747474;
+  position: relative;
 }
 .first h2{
   text-align: center;
